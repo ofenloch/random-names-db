@@ -1,4 +1,15 @@
-# RandomName - Generate SQL INSERT statement with a list of random names
+# RandomNames - Generate SQL INSERT statement with a list of random names
+
+## Building
+
+Run `mvn clean dependency:copy-dependencies package` in the project's root folder. This builds the 
+program, runs the tests and 'packages' the program (if the tests were successful). In directory *target/* 
+there will be a jar file *randomnames-1.0-SNAPSHOT.jar* (the version number may be different) and a folder 
+*dependency/* with all required jar files to run the program. See script *data/runApp.sh* on how to use the jar file.
+
+## Usage
+
+
 
 ## Get The Data
 
