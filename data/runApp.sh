@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JARFILE="./target/randomnames-1.0-SNAPSHOT.jar"
+JARFILE="./target/randomnames-1.1-SNAPSHOT.jar"
 MAINCLASS="ofenloch.randomnames.randomnames"
 DEPENDENCIES="./target/dependency"
 
