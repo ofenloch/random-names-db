@@ -1,4 +1,12 @@
+# Appending a slash indicates the pattern is a directory. The entire contents of 
+# any directory in the repository matching that name including all of its files 
+# and subdirectories – will be ignored
 data/us-census-1990/
 target/
+testoutput/
 .classpath
+.factorypath
 .project
+.settings/
+# Prepending a slash matches files only in the repository root.
+/*.sql
