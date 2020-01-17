@@ -1,4 +1,4 @@
-package ofenloch.randomnames;
+package de.ofenloch.util.randomnames;
 /**
  * small helper class to handle the gender stuff
  */

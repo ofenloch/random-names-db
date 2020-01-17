@@ -1,4 +1,4 @@
-package ofenloch.randomnames;
+package de.ofenloch.util.randomnames;
 
 import org.junit.Test;
 
@@ -16,7 +16,7 @@ import java.nio.file.Paths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import ofenloch.randomnames.*;
+import de.ofenloch.util.randomnames.*;
 
 /**
  * Unit test for simple App.

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 JARFILE="./target/randomnames-1.1-SNAPSHOT.jar"
-MAINCLASS="ofenloch.randomnames.randomnames"
+MAINCLASS="de.ofenloch.util.randomnames.randomnames"
 DEPENDENCIES="./target/dependency"
 
 JAVA=/usr/lib/jvm/default-java/bin/java

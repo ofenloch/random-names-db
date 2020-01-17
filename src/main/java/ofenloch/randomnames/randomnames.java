@@ -1,4 +1,4 @@
-package ofenloch.randomnames;
+package de.ofenloch.util.randomnames;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -16,8 +16,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import ofenloch.randomnames.gender;
-import ofenloch.randomnames.name;
+import de.ofenloch.util.randomnames.gender;
+import de.ofenloch.util.randomnames.name;
 
 public class randomnames {
 
