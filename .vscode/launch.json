@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "randomnames",
+            "request": "launch",
+            "mainClass": "ofenloch.randomnames.randomnames"
+        },
+        {
+            "type": "java",
+            "name": "randomnames100000.sql",
+            "request": "launch",
+            "mainClass": "ofenloch.randomnames.randomnames",
+            "args": "100000 ${workspaceFolder}/data/randomnames100000.sql"
+        },
+        {
+            "type": "java",
+            "name": "randomnames20000.sql",
+            "request": "launch",
+            "mainClass": "ofenloch.randomnames.randomnames",
+            "args": "20000 ${workspaceFolder}/data/randomnames20000.sql"
+        },
+        {
+            "type": "java",
+            "name": "randomnames20.sql",
+            "request": "launch",
+            "mainClass": "ofenloch.randomnames.randomnames",
+            "args": "20 ${workspaceFolder}/data/randomnames20.sql"
+        }
+    ]
+}
