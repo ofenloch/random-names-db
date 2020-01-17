@@ -1,0 +1,24 @@
+#!/bin/bash
+
+JARFILE="./target/randomnames-1.0-SNAPSHOT.jar"
+MAINCLASS="ofenloch.randomnames.randomnames"
+DEPENDENCIES="./target/dependency"
+
+JAVA=/usr/lib/jvm/default-java/bin/java
+
+JAVAARGS="-agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:38031 -Dfile.encoding=UTF-8"
+JAVAARGS="-Dfile.encoding=UTF-8"
+
+CLASSPATH=${JARFILE}
+
+for jar in ${DEPENDENCIES}/*.jar ; do
+    if [ -f "${jar}" ] ; then
+        #echo "adding ${jar} to CLASSPATH"
+        CLASSPATH=${CLASSPATH}:${jar}
+    fi
+done
+
+# echo "CLASSPATH is ${CLASSPATH}"
+
+echo "calling \"${JAVA} ${JAVAARGS} -classpath ${CLASSPATH} ${MAINCLASS} $@\" ..."
+${JAVA} ${JAVAARGS} -classpath ${CLASSPATH} ${MAINCLASS} $@
