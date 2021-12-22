@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import de.ofenloch.util.randomnames.gender;
 import de.ofenloch.util.randomnames.name;
@@ -28,6 +30,7 @@ public class randomnames {
     // static final long constantSeed = 0;
     // static final Random random = new Random();
 
+    protected static final Logger log = LogManager.getLogger(randomnames.class.getName());
     static public void main(String[] args) {
 
         String[] fileNames = { "./data/us-census-1990/dist.all.last.txt", "./data/us-census-1990/dist.female.first.txt",
